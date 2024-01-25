@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    max-width: 100%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #e74c3c;
+}
+
+h3 {
+    color: #27ae60;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+p {
+    line-height: 1.4;
+    color: #555;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.score {
+    display: none;
+}
+
+.revealButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#searchInput {
+    margin-top: 10px;
+}
+
+#searchResults {
+    flex: 1;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hidden-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+    display: inline-block;
+}
+
+.zoomable-image {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.zoomable-image:hover {
+    transform: scale(1.2);
+}
+
+/* Add media queries for smaller screens */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    #searchResults {
+        order: -1; /* Move #searchResults to the top on smaller screens */
+    }
+}

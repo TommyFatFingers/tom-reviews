@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--icon stuff-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+    <title>Tom Reviews</title>
+   
+        <link rel= "stylesheet" href="../styles/styles.css"> <!--my basic styles-->
+        <link rel= "stylesheet" href="../styles/imagezoom.css"> <!--image zoom hover--> 
+       
+<style> body #search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body #searchInput {
+    margin-top: 20px;
+}
+
+body #searchResults {
+    margin-top: 20px;
+    text-align: center;
+}
+ a.hidden-link {
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+            display: inline-block;
+        }
+
+</style>
+     
+
+
+
+</head>
+<body>
+
+    <header>
+         <h1>
+            <a href="../index.html" class="hidden-link">Tom Reviews</a>
+        </h1>
+    </header>
+
+      <nav>
+        <a href="/games/games.html">Computer Games</a>
+        <a href="/movies/movies.html">Movies</a>
+        <a href="/tv/tv.html">TV</a>
+        <a href="/music/music.html">Music</a>
+        <a href="/misc/misc.html">Misc</a>
+        <a href="/contact.html">Contact me!</a>
+    </nav>
+
+<div id="search-container">
+    <input type="text" id="searchInput" placeholder="Search for a review...">
+    <button onclick="search()">Search</button>
+</div>
+<div id="searchResults"></div>
+
+<article>
+        <h2>Review: Next Goal Wins (Movie)</h2>
+        <p>I only went and looked at my phone for most of the movie again.<br>
+There was definitely a few laughs to be had and there probably would have been a few more if I had paid attention but it wasnt a particularly gripping movie. <br>
+I usually love a sporting under dog story but this one just didnt grab me.<br> </p>
+         <button class="revealButton" onclick="toggleDiv('score10')">Reveal Score</button>
+        <h3 class="score" id="score10">Score: <span style="font-family: 'Courier New', Courier, monospace;">5/10 orange card</span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pRH5u5lpArQ?si=bdfcN_lH-6M_ef5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+
+
+<article> 
+        <h2>Review: Buttering soft bread on a cold day (with cold butter)</h2>
+        <p>Its 8am and I'm making sandwiches for my packed lunch. <br>
+We've ran out of spreadable lurpack (I am nearly middleclass).<br>
+Remembering all the Bear Grylls episodes I have ever watched, I overcome and adapt by just making a cheese and marmite sandwich;<br>
+Marmite will have to act as the butter.<br>
+My wife ominously calls down the stairs:<br>
+"Can you make me a sandwich too?"<br>
+I panick! <br>
+"We've ran out of spreadable butter!" I shout upstairs<br>
+"My dear Husband, We have some normal butter, use that." she shouts back while she applies her make up.<br>
+I look at the solid ice white butter dish and gulp. <br>
+Surely she cant be serious? Use the cold butter? This bread is difficult not to tear a hole in with spreadable butter. <br>
+"Are you sure you want a sandwich? I dont think this is gonna work."<br>
+I cant quite remember what my wife said, but I realised I never really had a choice. <br>
+I had to make her a sandwich or deal with the consequences, for who knows how long.<br>
+I implemented a fine slicing technique reminiscent of the ancient chinese torture method, Death by a thousand papercuts.<br>
+While doing this I thought about microwaving the butter or pouring boiling water on the lid of the butter dish but then I looked down and I was pretty much done.<br>
+Here are my results:<br>
+</p>
+
+        <button class="revealButton" onclick="toggleDiv('score1')">Reveal Score</button>
+        <h3 class="score" id="score1">Score: <span style="font-family: 'Courier New', Courier, monospace;">1/10 Absolute Pish</span></h3>
+        <img class="zoomable-image" src="/images/butter.jpg" alt="Roll Image">
+    </article>
+
+
+
+ <article>
+        <h2>Review: Danny Brown - Y.B.P (Music Video)</h2>
+        <p>My doctor recently called me middle aged on my last check up;<br>
+I am also white and I'm about to be upgraded from working class to middle class.<br>
+This makes it difficult for me to relate to the new Danny Brown song, Y.B.P, which I assume means "young, black & poor".<br>
+this doesnt stop me somewhat enjoying the track and especially enjoying the final 3rd of stop motion video. <br>
+the guy on the 2nd verse some some awkward sounding delivery which I would usually associate with Danny Brown - I dont know what this signifies.<br>  
+
+ </p>
+         <button class="revealButton" onclick="toggleDiv('score2')">Reveal Score</button>
+        <h3 class="score" id="score2">Score: <span style="font-family: 'Courier New', Courier, monospace;">6/10 - Its alright I suppose </span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6CUr6lMnwCc?si=dYaxjJtY5rj90AHD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+<article> 
+        <h2>Review: Trips to the Tip (recycling centre)</h2>
+        <p> I kinda love a trip to the tip.<br>
+I'm moving house so have lots of old crap to throw away.<br>
+bang it all in the boot of the car.<br>
+10 mins down the road, get to the tip.<br>
+show off my reverse parking skills by parking in the diagonal bays.<br>
+ask the bloke in the Hi-Vis "would you count this old hoover as plastic or metal?"<br>
+His eyes light up with £ signs as he asks "is that a dyson?"<br>
+"No mate, its some cheap shit from tesco."<br>
+"chuck it in the metal bin" he nods towards the big metal skip and is pleased that his sage judgement has been heeded.<br>
+then you get to climb the stairs to the massive skip and toss your crap in.<br>
+<br>
+Occasionally I have to get sneaky and hide a bag of rubbish around a corner or chuck it in a skip i'm 50% sure is the right category.<br>
+
+</p>
+
+        <button class="revealButton" onclick="toggleDiv('score3')">Reveal Score</button>
+        <h3 class="score" id="score3">Score: <span style="font-family: 'Courier New', Courier, monospace;">9.5/10 Strangely Cathartic</span></h3>
+        <img class="zoomable-image" src="/misc/recycle.jpg" alt="Roll Image">
+    </article>
+
+ <article>
+        <h2>Review: Jack Reacher, Season 2 (Prime TV series)</h2>
+        <p>Jack reacher season 2 wasn't as good as season 1.<br>
+I did like meeting his old army buddies but it just meant there was less screen time for Reacher to break bones.<br>
+Everyfight they did have, up until near the end, was always a knife fight because the bad guys didnt want to cause a scene.<br>
+So many times the series could of just ended if someone decided to shoot a gun instead (is this even set in America?)<br>
+Rather than link to a video from this current season, as I feel I have been bombarded by trailers for it, I have linked to a fight scene from season 1 
+which shows some good ol' bone breaking action<br> </p>
+         <button class="revealButton" onclick="toggleDiv('score4')">Reveal Score</button>
+        <h3 class="score" id="score4">Score: <span style="font-family: 'Courier New', Courier, monospace;">6/10 - a bit dumb but still enjoyable </span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MEUHYkbzDTI?si=VBaZss5glEi-kXXD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+ <article>
+        <h2>Review: The Kitchen (Netflix Movie)</h2>
+        <p>The Kitchen is a drama set in a dystopian future that occasionally reminded me of Romain Gavras' movie "Athena."<br>
+Where Athena focused on the figureheads of both the rebels and the police, the kitchen concentrates on one citizen (UK rapper Kano) of the slums and his attempt to get a one-bedroom flat!<br>
+His plans go awry when he re-unites with his long-avoided son.<br>
+It's as exciting as it sounds.<br>
+While the movie looks nice and colourful, I just found myself looking at my phone instead and scrolling through Reddit.<br>
+<br>
+I'm trying to figure out why he even wanted a 1-bedroom flat anyway. He already had one and was probably paying fuck all rent<br>
+Also Ian Wright Wright Wright is in the movie. </p><br>
+         <button class="revealButton" onclick="toggleDiv('score5')">Reveal Score</button>
+        <h3 class="score" id="score5">Score: <span style="font-family: 'Courier New', Courier, monospace;">4/10 - Boring</span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GgT5cEV5Qt0?si=SG5TYWWH6yqDwZMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+
+        <article> 
+        <h2>Review: Colgate - Max White (Toothpaste)</h2>
+        <p> A favoured reader has requested I review my tootpaste...<br>
+         I am beholdent to my readers.<br>
+INTRODUCING: Colgate Max White with crystals (wooo) and 10x longer fresher breath. <br>
+I dont really think much about brushing my teeth. It's a quick couple of minutes of my day that seem really inconsequential 
+so writing a review means I currently have a good dollop of toothpaste sloshing about in my gob.<br>
+Its not that minty! Its mostly chalky. It definitely has a kick of freshness about it which I will guess is atrributed to: (checking the ingredients list)...Methylcellulose(?)<br>
+ That sounds minty. <br>
+Is it whitening my teeth? Its got some grainy bits in it so there is propbably a small element of the toothpaste slowly sandpapering my teeth back to sparkly white; but they
+largely remain a whitey yellowy colour. <br>
+<br>
+The reader has asked some rather personal questions:<br>
+"DOES YOUR WIFE PUSH THE PASTE UP FROM THE BOTTOM OF THE TUBE OR DOES SHE DO IT FROM THE TOP?"<br>
+My wife is an intelligent lady so obviously from the bottom. She wouldnt be Mrs Tom-reviews if the opposite were true.<br>
+Do I have any brand loyalty? I didnt think so! But my Wife reliably informs me that we are, in fact, a Colgate(tm) household. <br>
+And that she was rather disappointed in me when I erroneously purchased some cheap Aquafresh.<br>
+When I buy toothpaste I just buy whatever brand name is closest to £1. clearly I rarely buy the toothpaste.<br>
+<br>
+The reader goes on to ask for a "price to performance ratio" but I didnt buy it so I guess thats a 0:1 <br>
+which means my teeth are clean and the joint account is probably lean as Wife is probably buying mega expensive toothpaste. <br>
+<br>
+overall the toothpaste doesnt have any "wow" factor so I would happily try a different one. dont expect a review.
+
+</p>
+
+        <button class="revealButton" onclick="toggleDiv('score6')">Reveal Score</button>
+        <h3 class="score" id="score6">Score: <span style="font-family: 'Courier New', Courier, monospace;">6.5/10 It does the job.</span></h3>
+        <img class="zoomable-image" src="/misc/toothpaste.jpg" alt="Roll Image">
+    </article>
+        
+
+        <article>
+        <h2>Review: Large bread rolls (6 pack from Tesco)!</h2>
+        <p>I mean, what has this website come to already (day 4)? <br>
+Have I already run out of things to review?<br>
+I told my wife that I intended to review at least one thing a day and she helpfully suggested I review the breadrolls we ate last night.<br>
+Ok then....I do love bread.<br>
+These rolls are pretty large and easily fit a slice of those slices of cheese you can buy for like £4 for 2 packs at Tesco. <br>
+I was suprised at how soft these particluar rolls were, perhaps we got lucky and picked the freshest pack off of the shelves. </p>
+Texture: Like a fluffy cloud and no stodge to it<br>
+Flavour: Bread<br>
+Aroma: didnt really have one but if you got in there like a pig searching for truffles I am certain it would smell of bread.<br>
+<br>
+Overall we both enjoyed our beef burgers, cheese & onion, and my cheese & marmite rolls over the last 2 days. <br>
+Beloved Wife can have the last roll.<br>
+        <button class="revealButton" onclick="toggleDiv('score7')">Reveal Score</button>
+        <h3 class="score" id="score7">Score: <span style="font-family: 'Courier New', Courier, monospace;">7/10 its just a bread roll</span></h3>
+        <img class="zoomable-image" src="/misc/roll.jpg" alt="Roll Image">
+    </article>
+
+
+
+    <article>
+        <h2>Review: LASERS (Free steam game)</h2>
+        <p> compete against other players in a race to the finish line while dodging lasers <br>
+            The main draw of the game seems to be the jiggle mechanics on the boobs and making your character twerk.<br> 
+            for a free game it doesn't compete with "fall guys" but it's a fun attempt with some challenging levels<br>
+            I played it for a total of 0.4 hours (according to steam) and I might play it again after a beer.  <br>
+        </p>
+        <button class="revealButton" onclick="toggleDiv('score8')">Reveal Score</button>
+        <h3 class="score" id="score8">Score: <span style="font-family: 'Courier New', Courier, monospace;">6/10</span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/05-LcHXWI6o?si=GMm6aR-ZwYif2Ohw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+
+
+    <article>
+        <h2>Review: IDLES - GIFT HORSE (Music video)</h2>
+        <p>I watched the video 2 times in a row. <br>
+            I love the energy and I feel a sort of indignant rage towards low paid work and being forced to twerk for likes<br></p>
+        <button class="revealButton" onclick="toggleDiv('score9')">Reveal Score</button>
+        <h3 class="score" id="score9">Score: <span style="font-family: 'Courier New', Courier, monospace;">9/10</span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_HQrM5L9T1g?si=qBpSR25dt3rGEdVt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+
+
+ 
+
+   
+        
+      <script src="../scripts/revealScript.js"></script>
+      <script src="../scripts/searchScript.js"></script>
+      
+
+  
+</body>
+</html>
+		
