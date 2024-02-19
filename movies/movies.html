@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--icon stuff-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <title>Tom Reviews</title>
+   
+        <link rel= "stylesheet" href="../styles/styles.css"> <!--my basic styles-->
+        <link rel= "stylesheet" href="../styles/imagezoom.css"> <!--image zoom hover--> 
+       
+<style> body #search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body #searchInput {
+    margin-top: 20px;
+}
+
+body #searchResults {
+    margin-top: 20px;
+    text-align: center;
+}
+ a.hidden-link {
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+            display: inline-block;
+        }
+
+</style>
+     
+
+<script src="../scripts/searchScript.js"></script>
+
+</head>
+<body>
+
+    <header>
+         <h1>
+            <a href="../index.html" class="hidden-link">Tom Reviews</a>
+        </h1>
+    </header>
+
+      <nav>
+        <a href="/games/games.html">Computer Games</a>
+        <a href="/movies/movies.html">Movies</a>
+        <a href="/tv/tv.html">TV</a>
+        <a href="/music/music.html">Music</a>
+        <a href="/misc/misc.html">Misc</a>
+        <a href="/contact.html">Contact me!</a>
+    </nav>
+
+<div id="search-container">
+    <input type="text" id="searchInput" placeholder="Search for a review...">
+    <button onclick="search()">Search</button>
+</div>
+<div id="searchResults"></div>
+
+<article>
+        <h2>Review: Next Goal Wins (Movie)</h2>
+        <p>I only went and looked at my phone for most of the movie again.<br>
+There was definitely a few laughs to be had and there probably would have been a few more if I had paid attention but it wasnt a particularly gripping movie. <br>
+I usually love a sporting under dog story but this one just didnt grab me.<br> </p>
+         <button class="revealButton" onclick="toggleDiv('score10')">Reveal Score</button>
+        <h3 class="score" id="score10">Score: <span style="font-family: 'Courier New', Courier, monospace;">5/10 orange card</span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pRH5u5lpArQ?si=bdfcN_lH-6M_ef5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+
+<article>
+        <h2>Review: The Kitchen (Netflix Movie)</h2>
+        <p>The Kitchen is a drama set in a dystopian future that occasionally reminded me of Romain Gavras' movie "Athena."<br>
+Where Athena focused on the figureheads of both the rebels and the police, the kitchen concentrates on one citizen (UK rapper Kano) of the slums and his attempt to get a one-bedroom flat!<br>
+His plans go awry when he re-unites with his long-avoided son.<br>
+It's as exciting as it sounds.<br>
+While the movie looks nice and colourful, I just found myself looking at my phone instead and scrolling through Reddit.<br>
+<br>
+I'm trying to figure out why he even wanted a 1-bedroom flat anyway. He already had one and was probably paying fuck all rent<br>
+Also Ian Wright Wright Wright is in the movie. </p><br>
+         <button class="revealButton" onclick="toggleDiv('score1')">Reveal Score</button>
+        <h3 class="score" id="score1">Score: <span style="font-family: 'Courier New', Courier, monospace;">4/10 - Boring</span></h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GgT5cEV5Qt0?si=SG5TYWWH6yqDwZMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+ 
+
+   
+        
+      <script src="../scripts/revealScript.js"></script>
+  
+</body>
+</html>

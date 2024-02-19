@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--icon stuff-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <title>Tom Reviews</title>
+   
+        <link rel= "stylesheet" href="../styles/styles.css"> <!--my basic styles-->
+        <link rel= "stylesheet" href="../styles/imagezoom.css"> <!--image zoom hover--> 
+       
+<style> body #search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body #searchInput {
+    margin-top: 20px;
+}
+
+body #searchResults {
+    margin-top: 20px;
+    text-align: center;
+}
+
+ a.hidden-link {
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+            display: inline-block;
+        }
+
+</style>
+     
+
+<script src="../scripts/searchScript.js"></script>
+
+</head>
+<body>
+
+    <header>
+         <h1>
+            <a href="../index.html" class="hidden-link">Tom Reviews</a>
+        </h1>
+    </header>
+
+      <nav>
+        <a href="/games/games.html">Computer Games</a>
+        <a href="/movies/movies.html">Movies</a>
+        <a href="/tv/tv.html">TV</a>
+        <a href="/music/music.html">Music</a>
+        <a href="/misc/misc.html">Misc</a>
+        <a href="/contact.html">Contact me!</a>
+    </nav>
+
+<div id="search-container">
+    <input type="text" id="searchInput" placeholder="Search for a review...">
+    <button onclick="search()">Search</button>
+</div>
+<div id="searchResults"></div>
+
+
+
+       <article> 
+        <h2>Review: Colgate - Max White (Toothpaste)</h2>
+        <p> A favoured reader has requested I review my tootpaste...<br>
+         I am beholdent to my readers.<br>
+INTRODUCING: Colgate Max White with crystals (wooo) and 10x longer fresher breath. <br>
+I dont really think much about brushing my teeth. It's a quick couple of minutes of my day that seem really inconsequential 
+so writing a review means I currently have a good dollop of toothpaste sloshing about in my gob.<br>
+Its not that minty! Its mostly chalky. It definitely has a kick of freshness about it which I will guess is atrributed to: (checking the ingredients list)...Methylcellulose(?)<br>
+ That sounds minty. <br>
+Is it whitening my teeth? Its got some grainy bits in it so there is propbably a small element of the toothpaste slowly sandpapering my teeth back to sparkly white; but they
+largely remain a whitey yellowy colour. <br>
+<br>
+The reader has asked some rather personal questions:<br>
+"DOES YOUR WIFE PUSH THE PASTE UP FROM THE BOTTOM OF THE TUBE OR DOES SHE DO IT FROM THE TOP?"<br>
+My wife is an intelligent lady so obviously from the bottom. She wouldnt be Mrs Tom-reviews if the opposite were true.<br>
+Do I have any brand loyalty? I didnt think so! But my Wife reliably informs me that we are, in fact, a Colgate(tm) household. <br>
+And that she was rather disappointed in me when I erroneously purchased some cheap Aquafresh.<br>
+When I buy toothpaste I just buy whatever brand name is closest to £1. clearly I rarely buy the toothpaste.<br>
+<br>
+The reader goes on to ask for a "price to performance ratio" but I didnt buy it so I guess thats a 0:1 <br>
+which means my teeth are clean and the joint account is probably lean as Wife is probably buying mega expensive toothpaste. <br>
+<br>
+overall the toothpaste doesnt have any "wow" factor so I would happily try a different one. dont expect a review.
+
+</p>
+
+        <button class="revealButton" onclick="toggleDiv('score9')">Reveal Score</button>
+        <h3 class="score" id="score9">Score: <span style="font-family: 'Courier New', Courier, monospace;">6.5/10 It does the job</span></h3>
+        <img class="zoomable-image" src="/images/toothpaste.jpg" alt="Roll Image">
+    </article>
+
+    
+        
+    <script src="../scripts/revealScript.js"></script>
+  
+</body>
+</html>
+

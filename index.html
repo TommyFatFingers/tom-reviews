@@ -16,8 +16,8 @@
 
     <title>Tom Reviews</title>
    
-        <link rel= "stylesheet" href="../styles/test.css"> <!--my basic styles-->
-        
+        <link rel= "stylesheet" href="../styles/styles.css"> <!--my basic styles-->
+        <link rel= "stylesheet" href="../styles/imagezoom.css"> <!--image zoom hover--> 
        
 <style> body #search-container {
     text-align: center;
@@ -67,6 +67,42 @@ body #searchResults {
     <button onclick="search()">Search</button>
 </div>
 <div id="searchResults"></div>
+
+   <article>
+        <h2>Review: Posh pub restuarant (food)</h2>
+        <p>On day two of operation: spend all my money as fast as I can, we are going to posh pub/restaurant<br>
+to anyone thinking "err no a pub cant be a posh restaurant" fuck off, they serve cocktails. <br>
+Am I reviewing the meal? no. <br>
+I am reviewing just having a meal at a venue. <br>
+I walked to this pub (proper trek) once and just ordered a J20 and some chips and I was blown away.<br>
+How the hell someone can make chips and blow me away must either point to my lack of a culinary palete or that this place is bloody amazing. <br>
+Since the chips I have eaten at the 3 Horseshoes In madingley like 3 times (bloody expensive)<br>
+but as we are moving away from the area soon I cannot think of a better last meal <br>
+I will just get some random stuff off the menu. It will be great.<br>
+<br>
+actually I'm not writing a review of the meal cos when i get back home I just want to drink a beer and play Ps5 or watch something with my Wife.<br>
+I am writing a review of something everyday, so I guess I am just getting this one out of the way<br>
+
+        </p>
+        
+      <button class="revealButton" onclick="toggleDiv('score8')">Reveal Score</button>
+        <h3 class="score" id="score8">Score: <span style="font-family: 'Courier New', Courier, monospace;">9/10 Nandos is cheaper but this is tastier</span></h3>
+        <img class="zoomable-image" src="/images/pub.jpg" alt="pub">
+    </article>
+
+
+<article> 
+        <h2>Review: Pay day takeaway (Indian)</h2>
+        <p>Its pay day! Lets celebrate by spending my money as quickly as possible and buy an expensive takeaway!<br>
+Thats £40 down the drain on vindaloo, naan, poppadoms, onion bhajis, whatever my wife had and a burning ring piece tomorrow<br>
+Sometimes the vindaloo isnt that spicy and I proper love it.<br>
+most of the time I cry and my nose runs.<br>
+</p>
+
+        <button class="revealButton" onclick="toggleDiv('score9')">Reveal Score</button>
+        <h3 class="score" id="score9">Score: <span style="font-family: 'Courier New', Courier, monospace;">8/10 So tasty, but too expensive</span></h3>
+        <img class="zoomable-image" src="/images/aitakeaway.png" alt="Ai take away">
+    </article>
 
 <article>
         <h2>Review: Next Goal Wins (Movie)</h2>
@@ -141,7 +177,7 @@ Occasionally I have to get sneaky and hide a bag of rubbish around a corner or c
 
         <button class="revealButton" onclick="toggleDiv('score3')">Reveal Score</button>
         <h3 class="score" id="score3">Score: <span style="font-family: 'Courier New', Courier, monospace;">9.5/10 Strangely Cathartic</span></h3>
-        <img class="zoomable-image" src="/misc/recycle.jpg" alt="Roll Image">
+        <img class="zoomable-image" src="/images/recycle.jpg" alt="Roll Image">
     </article>
 
  <article>
@@ -201,7 +237,7 @@ overall the toothpaste doesnt have any "wow" factor so I would happily try a dif
 
         <button class="revealButton" onclick="toggleDiv('score6')">Reveal Score</button>
         <h3 class="score" id="score6">Score: <span style="font-family: 'Courier New', Courier, monospace;">6.5/10 It does the job.</span></h3>
-        <img class="zoomable-image" src="/misc/toothpaste.jpg" alt="Roll Image">
+        <img class="zoomable-image" src="/images/toothpaste.jpg" alt="Roll Image">
     </article>
         
 
@@ -221,7 +257,7 @@ Overall we both enjoyed our beef burgers, cheese & onion, and my cheese & marmit
 Beloved Wife can have the last roll.<br>
         <button class="revealButton" onclick="toggleDiv('score7')">Reveal Score</button>
         <h3 class="score" id="score7">Score: <span style="font-family: 'Courier New', Courier, monospace;">7/10 its just a bread roll</span></h3>
-        <img class="zoomable-image" src="/misc/roll.jpg" alt="Roll Image">
+        <img class="zoomable-image" src="/images/roll.jpg" alt="Roll Image">
     </article>
 
 
@@ -240,14 +276,7 @@ Beloved Wife can have the last roll.<br>
 
 
 
-    <article>
-        <h2>Review: IDLES - GIFT HORSE (Music video)</h2>
-        <p>I watched the video 2 times in a row. <br>
-            I love the energy and I feel a sort of indignant rage towards low paid work and being forced to twerk for likes<br></p>
-        <button class="revealButton" onclick="toggleDiv('score9')">Reveal Score</button>
-        <h3 class="score" id="score9">Score: <span style="font-family: 'Courier New', Courier, monospace;">9/10</span></h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_HQrM5L9T1g?si=qBpSR25dt3rGEdVt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </article>
+   
 
 
 
