@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--icon stuff-->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -12,35 +13,16 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+
     <title>Tom Reviews</title>
    
-        <link rel= "stylesheet" href="../styles/styles.css"> <!--my basic styles-->
-        <link rel= "stylesheet" href="../styles/imagezoom.css"> <!--image zoom hover--> 
+        <link rel= "stylesheet" href="../styles/styles.css?feb20"> <!--my basic styles-->
+        <link rel= "stylesheet" href="../styles/imagezoom.css?feb20"> <!--image zoom hover--> 
        
-<style> body #search-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-body #searchInput {
-    margin-top: 20px;
-}
-
-body #searchResults {
-    margin-top: 20px;
-    text-align: center;
-}
- a.hidden-link {
-            text-decoration: none;
-            color: inherit;
-            cursor: default;
-            display: inline-block;
-        }
-
-</style>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191;</button>
      
 
-<script src="../scripts/searchScript.js"></script>
+
 
 </head>
 <body>
@@ -61,10 +43,10 @@ body #searchResults {
     </nav>
 
 <div id="search-container">
-    <input type="text" id="searchInput" placeholder="Search for a review...">
-    <button onclick="search()">Search</button>
+    <input type="text" id="searchBox" placeholder="Start typing to search for a review...">
+    
 </div>
-<div id="searchResults"></div>
+<div id="results"></div>
 
 <article>
         <h2>Review: Next Goal Wins (Movie)</h2>
@@ -94,7 +76,11 @@ Also Ian Wright Wright Wright is in the movie. </p><br>
 
    
         
-      <script src="../scripts/revealScript.js"></script>
+      
+      <script src="../scripts/revealScript.js"></script>     
+  
+<script src="../scripts/searchGPT4.js?feb20a"></script>
+<script src="../scripts/backtotop.js"></script>
   
 </body>
 </html>

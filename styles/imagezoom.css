@@ -1,5 +1,5 @@
 /* styles.css */
-
+@media screen and (min-width: 768px) {
 .zoomable-image {
     width: 100%; /* Set the initial width of the image */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
@@ -7,4 +7,5 @@
 
 .zoomable-image:hover {
     transform: scale(1.2); /* Zoom in on hover */
+}
 }
