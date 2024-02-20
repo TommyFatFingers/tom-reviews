@@ -16,30 +16,10 @@
 
     <title>Tom Reviews</title>
    
-        <link rel= "stylesheet" href="../styles/styles.css"> <!--my basic styles-->
-        <link rel= "stylesheet" href="../styles/imagezoom.css"> <!--image zoom hover--> 
+        <link rel= "stylesheet" href="../styles/styles.css?feb20d"> <!--my basic styles-->
+        <link rel= "stylesheet" href="../styles/imagezoom.css?feb20a"> <!--image zoom hover--> 
        
-<style> body #search-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-body #searchInput {
-    margin-top: 20px;
-}
-
-body #searchResults {
-    margin-top: 20px;
-    text-align: center;
-}
- a.hidden-link {
-            text-decoration: none;
-            color: inherit;
-            cursor: default;
-            display: inline-block;
-        }
-
-</style>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191;</button>
      
 
 
@@ -63,10 +43,59 @@ body #searchResults {
     </nav>
 
 <div id="search-container">
-    <input type="text" id="searchInput" placeholder="Search for a review...">
-    <button onclick="search()">Search</button>
+    <input type="text" id="searchBox" placeholder="Start typing to search for a review...">
+    
 </div>
-<div id="searchResults"></div>
+<div id="results"></div>
+
+
+<article>
+    <h2>Review: Buying a home (as first time buyers)</h2>
+    <img class="zoomable-image" src="/images/home.jpg" alt="pub">
+    <p>About 8 years ago I went through a DRO or debt relief order which is basically a soft bankruptcy. <br>
+        I had lost my job and owed nearly 20k.<br>
+         I was fortunate to have a roof over my head living at a social co-operative (its a weird type of social housing that I should probably write a review for).<br>
+    <br>
+        Anyway - 8 years after reaching the bottom, my wife and I have managed to save enough for 5% deposit on a house under 200k. <br>
+        We have had to move an hour away to be able to afford a place but I am amazed not to be renting. 
+
+        The process of saving for a house basically meant we were semi-hermitted for 2 years. <br>
+        finding a house within our budget and that fitted our hopes and dreams was quite difficult. <br>
+        we were "gazumped" on 2 houses we had bids accepted for - this is where a cash buyer has stolen the sale from under us. <br>
+        The house we bought we had intitally seen a few months prior but we didnt put an offer in as it was about 30K over what we wanted to pay.<br>
+        The seller dropped the price just as we had about given up of finding anything and we managed to buy a recently built home (6years old) for 3k less then the seller paid for it!<br>
+
+        then we basically just had to pay loads of people loads of money to do all the paperwork for us and it took around 3.5months! <br>
+        It was pretty confusing and we made a few faux pas such as getting a better rate on mortgage after exchanging contracts - but it all worked out fine.<br>
+        <br>
+
+moving in and out was OK as we had loads of volunteers! <br>even my old neighbour helped me move out...cant tell if that means he liked us or wanted us out!<br>
+we rented a luton van with a tail lift and managed to get 90% of the stuff on and the rest in peoples cars.<br>
+we had everything in the new house just by just after midday! massive thanks to everyone that helped xxx <br>
+
+the day we picked up the keys we decided to rug doctor the entire house as the carpest looked dirty. <br>
+we did a good job. <br>
+however msyelf and my mother in law got a good whiff of teh carpet the next day when we were putting the sofa together and our heads were near the floor: <br><br>
+PISS. <br><br>
+Piss all over the carpets. <br>
+apparantly cleaning a carpet can agitate old smells. <br>
+Once you smell it you cant get rid of it. we tried lots of cleaning products and white vinegar and such 
+until it was decided we had no choice but to rip out the carpet and put in laminate wood flooring.<br>
+This took us about 4 days to buy everything (with some help) and get it done.<br>
+<br>
+
+I am very happy with the results but fuck me it was some work and i was not expecting to be renovating a room after less than a few days of home ownership. <br><br>
+Also the toilets are leaking and I have literally just discovered one of the upstairs windows wont shut. <br>
+
+I imagine my weekends will forever be filled with trips to B&Q and odd jobs 
+
+    </p>
+    
+  <button class="revealButton" onclick="toggleDiv('score7')">Reveal Score</button>
+    <h3 class="score" id="score7">Score: <span style="font-family: 'Courier New', Courier, monospace;">8.1/10 I actually own a home!  <br><br>
+    this score is an average... actually owning a home is 10/10. paying for it is 7.5/10. the process of buying is 7.9/10. actually moving is 7/10</span></h3>
+   
+</article>
 
    <article>
         <h2>Review: Posh pub restuarant (food)</h2>
@@ -255,8 +284,8 @@ Aroma: didnt really have one but if you got in there like a pig searching for tr
 <br>
 Overall we both enjoyed our beef burgers, cheese & onion, and my cheese & marmite rolls over the last 2 days. <br>
 Beloved Wife can have the last roll.<br>
-        <button class="revealButton" onclick="toggleDiv('score7')">Reveal Score</button>
-        <h3 class="score" id="score7">Score: <span style="font-family: 'Courier New', Courier, monospace;">7/10 its just a bread roll</span></h3>
+        <button class="revealButton" onclick="toggleDiv('score11')">Reveal Score</button>
+        <h3 class="score" id="score11">Score: <span style="font-family: 'Courier New', Courier, monospace;">7/10 its just a bread roll</span></h3>
         <img class="zoomable-image" src="/images/roll.jpg" alt="Roll Image">
     </article>
 
@@ -277,6 +306,7 @@ Beloved Wife can have the last roll.<br>
 
 
    
+    
 
 
 
@@ -284,11 +314,10 @@ Beloved Wife can have the last roll.<br>
 
    
         
-      <script src="../scripts/revealScript.js"></script>
-      <script src="../scripts/searchScript.js"></script>
-      
-
+      <script src="../scripts/revealScript.js"></script>     
   
+<script src="../scripts/searchGPT4.js?feb20"></script>
+<script src="../scripts/backtotop.js"></script>
 </body>
 </html>
 		

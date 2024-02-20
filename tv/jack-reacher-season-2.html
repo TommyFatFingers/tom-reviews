@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--icon stuff-->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -12,34 +13,13 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+
     <title>Tom Reviews</title>
    
         <link rel= "stylesheet" href="../styles/styles.css"> <!--my basic styles-->
         <link rel= "stylesheet" href="../styles/imagezoom.css"> <!--image zoom hover--> 
-
        
-       
-<style> body #search-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-body #searchInput {
-    margin-top: 20px;
-}
-
-body #searchResults {
-    margin-top: 20px;
-    text-align: center;
-}
- a.hidden-link {
-            text-decoration: none;
-            color: inherit;
-            cursor: default;
-            display: inline-block;
-        }
-
-</style>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191;</button>
      
 
 
@@ -62,17 +42,11 @@ body #searchResults {
         <a href="/contact.html">Contact me!</a>
     </nav>
 
-
-
-    <div id="search-container">
-        <label for="search-input">Search: </label>
-        <input type="text" id="search-input" oninput="performSearch()">
-    </div>
-
-    <div id="result-container">
-        <h2>Search Results</h2>
-        <ul id="results-list"></ul>
-    </div>
+<div id="search-container">
+    <input type="text" id="searchBox" placeholder="Start typing to search for a review...">
+    
+</div>
+<div id="results"></div>
 
     <article>
         <h2>Review: Jack Reacher, Season 2 (Prime TV series)</h2>
